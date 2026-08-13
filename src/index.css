@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+ background-color:#D2D2D2;
+}
+header {
+    background-color: #1D5361;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;  
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 40px; /* Garante que o menu não fique colado nas bordas da tela */
+}
+
+/* Esta classe aplica o alinhamento e o espaço entre TODOS os links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px; /* Garante espaço igual entre Sobre, Entrar e cadastrar-se */
+}
+
+.nav-link {
+  color: #4F9DA6;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: sans-serif;
+  white-space: nowrap; /* Impede que o texto quebre linha em telas menores */
+}
+
+.nav-link:hover {
+  color: #3a6c72;
+}
+
+h1{
+    color: #fff;
+    font-size: 35px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.lista-dos-quartos{
+  
+  margin-top: 3.5rem;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 40px 20px;
+
+}
+
+.quarto-card {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quarto-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #fff;
+}
+
+.btn-reserva {
+  background: #ff9800; /* laranja do Figma */
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start;
+}

@@ -1,0 +1,60 @@
+.caixa-pesquisa {
+    background-color: #C0C0C0; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px 60px;
+    gap: 7.8rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo label {
+    color: #222;
+}
+
+.campo input {
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: #D9D9D9; 
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+
+.campo .input-datas {
+    background-color: #FFFFFF; 
+    width: 260px;
+    height: 160px;
+}
+
+select{
+     background-color: #f8f0f0;
+    width:180px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.btn-pesquisar {
+    margin-top: 25px;
+    background-color: #38C6A5;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 28px;
+    cursor: pointer;
+}
+
+.btn-pesquisar:hover {
+    background-color: #2a8b75;
+
+}
