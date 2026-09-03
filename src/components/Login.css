@@ -1,0 +1,45 @@
+.login-container{
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  
+}
+
+
+.login-container h2{
+  text-align: center;
+  color: #1d5661;
+  margin-bottom: 35px;
+}
+
+.login-container form {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Os inputs e o botão passam a preencher o form por inteiro */
+.login-container .campo input {
+  width: 100%;
+}
+
+.btn-login{
+  width: 100%;
+  padding: 12px;
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  
+}
+
+
+.btn-cadastrar:hover{
+  background: #e68900;
+}

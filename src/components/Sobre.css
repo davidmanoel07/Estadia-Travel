@@ -1,0 +1,94 @@
+.sobre-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Abertura */
+.sobre-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #1d5661;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.sobre-hero h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.sobre-hero p {
+  color: #d9e5e8;
+  font-size: 18px;
+}
+
+/* História */
+.sobre-texto {
+  margin-top: 48px;
+}
+
+.sobre-texto h3,
+.sobre-valores h3,
+.sobre-cta h3 {
+  color: #1d5661;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+.sobre-texto p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Valores em cards */
+.valores-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.valor-card {
+  flex: 1 1 240px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.valor-card h4 {
+  color: #1d5661;
+  margin-bottom: 8px;
+}
+
+.valor-card p {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Chamada final */
+.sobre-cta {
+  margin-top: 48px;
+  text-align: center;
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.btn-cta {
+  display: inline-block;
+  margin-top: 16px;
+  background: #ff9800;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-cta:hover {
+  background: #e68900;
+}

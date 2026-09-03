@@ -54,9 +54,10 @@ h1{
   
   margin-top: 3.5rem;
   display: flex;
-  gap: 24px;
+gap: 48px 24px;   /* 48px entre linhas (cima/baixo) • 24px entre colunas (lado a lado) */
   justify-content: center;
   padding: 40px 20px;
+  flex-wrap: wrap;
 
 }
 
@@ -82,4 +83,51 @@ h1{
   font-weight: bold;
   cursor: pointer;
   align-self: flex-start;
+}
+
+footer {
+  background: #1d5661;               /* mesmo tom do header */
+  color: #fff;
+  margin-top: 60px;
+}
+
+.Section-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.footer-copy {
+  font-size: 16px;
+  color: #b9c9cd;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 18px;
+}
+
+
+.campo {
+  margin-bottom: 25px;
+  
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+p{
+  margin-top: 20px;
+  margin-left: 12%;
+}
+
+
+.link-login{
+  color: #2db7d3;
+  text-decoration: underline;
 }
