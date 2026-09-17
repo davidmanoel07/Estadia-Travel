@@ -55,7 +55,7 @@ function Cadastro() {
       
       <form onSubmit={handleCadastrar}>
         <div className="campo">
-          <label htmlFor="nome">Nome:</label>
+          <label htmlFor="nome">Nome Completo:</label>
           <input
             type="text"
             id="nome"

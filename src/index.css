@@ -123,11 +123,56 @@ footer {
 
 p{
   margin-top: 20px;
-  margin-left: 12%;
+  margin-left: 10px
 }
 
 
 .link-login{
   color: #2db7d3;
+  text-decoration: underline;
+}
+
+.modal-fundo {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-caixa {
+  background: #fff;
+  padding: 32px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn-modal {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-fechar {
+  background: transparent;
+  border: none;
+  color: #777;
+  cursor: pointer;
   text-decoration: underline;
 }

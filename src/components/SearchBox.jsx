@@ -7,6 +7,7 @@ function SearchBox({ onPesquisar }) {
 
   return (
     <section className="caixa-pesquisa">
+
       <div className="campo">
         <label htmlFor="destino">Insira o destino:</label>
         <input
@@ -39,6 +40,7 @@ function SearchBox({ onPesquisar }) {
       >
         Pesquisar
       </button>
+      
     </section>
   );
 }
