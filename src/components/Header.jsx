@@ -1,27 +1,39 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-function Header(){
-    return(
+function Header() {
+  const navigate = useNavigate();
+  const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
 
- <header>
-       
-        <h1>Estadia Travel</h1>
+  function handleSair() {
+    localStorage.removeItem("usuarioLogado");
+    navigate("/");
+  }
 
-    <nav className="nav-container">
+  return (
+    <header>
+      <h1>Estadia Travel</h1>
 
-         <div className="nav-links">
+      <nav className="nav-container">
+        <div className="nav-links">
+          <Link to="/sobre" className="nav-link">Sobre</Link>
 
-              <Link to="/sobre" className="nav-link">Sobre</Link>
+          {usuarioLogado ? (
+            <>
+              <span className="nav-link">Olá, {usuarioLogado.nome}</span>
+              <button className="nav-link btn-sair" onClick={handleSair}>
+                Sair
+              </button>
+            </>
+          ) : (
+            <>
               <Link to="/login" className="nav-link">Entrar</Link>
               <Link to="/cadastro" className="nav-link">Cadastrar-se</Link>
-
+            </>
+          )}
         </div>
-       
-    </nav>
-
-</header>
-
-    )
+      </nav>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
