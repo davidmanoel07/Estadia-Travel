@@ -1,16 +1,44 @@
-# React + Vite
+# 🏨 Estadia Travel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema de reserva de quartos de solteiro, casal e família em **São Paulo**, **Rio de Janeiro** e **Recife** — construído do zero com React.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Busca com filtro** — encontre quartos por destino e tipo de hóspede (ignora maiúsculas/minúsculas)
+- **Autenticação** — cadastro e login com persistência em `localStorage`
+- **Reserva protegida** — pop-up exige login antes de reservar
+- **Reserva completa** — check-in/check-out com bloqueio de datas passadas, cálculo de noites e total
+- **Minhas Reservas** — histórico filtrado pelo usuário logado
+- **Sessão persistente** — header com "Olá, [nome]" e botão Sair
+- **Páginas extras** — Sobre, 404 personalizada e footer institucional
 
-## React Compiler
+## 🛠️ Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React](https://react.dev/) + [Vite](https://vite.dev/)
+- [React Router DOM](https://reactrouter.com/) para navegação entre páginas
+- CSS puro para estilização
+- `localStorage` para persistência de usuários e reservas
 
-## Expanding the ESLint configuration
+## ▶️ Como rodar localmente
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    git clone https://github.com/davidmanoel07/Estadia-Travel.git
+    cd Estadia-Travel
+    npm install
+    npm run dev
+
+Depois abra `http://localhost:5173` no navegador.
+
+## 📁 Estrutura do projeto
+
+    src/
+    ├── components/    # Header, SearchBox, Rooms, Cadastro, Login, Reserva...
+    ├── data/
+    │   └── quartos.js # "Banco de dados" dos 27 quartos
+    ├── App.jsx        # Home + filtro de busca
+    ├── router.jsx     # Rotas da aplicação
+    └── main.jsx       # Ponto de partida do React
+
+## 👤 Autor
+
+**David Manoel França de Oliveira** — [GitHub](https://github.com/davidmanoel07)
+
