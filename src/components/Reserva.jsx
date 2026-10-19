@@ -35,6 +35,8 @@ function Reserva() {
   const precoPorNoite = Number(quarto.preco.replace(",", "."));
   const total = noites * precoPorNoite;
 
+  const hoje = new Date().toISOString().split("T")[0];
+
   // "2026-09-17" → "17/09/2026"
   function formatarData(dataIso) {
     const [ano, mes, dia] = dataIso.split("-");
@@ -92,6 +94,7 @@ function Reserva() {
                 <input
                   type="date"
                   id="checkin"
+                  min={hoje}                                            // ← ADICIONADO
                   value={checkin}
                   onChange={(e) => setCheckin(e.target.value)}
                 />

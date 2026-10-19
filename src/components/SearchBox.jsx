@@ -40,6 +40,19 @@ function SearchBox({ onPesquisar }) {
       >
         Pesquisar
       </button>
+
+
+            <button
+  type="button"
+  className="btn-limpar"
+  onClick={() => {
+    setDestino("");
+    setTipo("");
+    onPesquisar("", "");
+  }}
+>
+  Limpar
+</button>
       
     </section>
   );

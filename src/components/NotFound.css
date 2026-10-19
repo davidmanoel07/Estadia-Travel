@@ -1,0 +1,13 @@
+.notfound-container {
+  text-align: center;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.notfound-container h2 {
+  font-size: 64px;
+  color: #1d5661;
+}

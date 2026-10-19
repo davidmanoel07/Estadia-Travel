@@ -61,3 +61,20 @@ select{
     background-color: #2a8b75;
 
 }
+
+
+.btn-limpar {
+  background: transparent;
+  border: 1px solid #1d5661;
+  color: #1d5661;
+  padding: 10px 16px;
+  margin-top:25px;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-limpar:hover {
+  background: #1d5661;
+  color: #fff;
+}

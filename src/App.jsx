@@ -11,6 +11,8 @@ function App() {
   
   // Memória do App: começa com todos os quartos.
   // Depois da busca, guarda só os que passaram no filtro.
+
+  
   const [quartosFiltrados, setQuartosFiltrados] = useState(quartos);
 
   function handlePesquisar(destino, tipo) {

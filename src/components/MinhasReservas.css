@@ -1,0 +1,60 @@
+.reservas-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reservas-container h2 {
+  text-align: center;
+  color: #1d5661;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.reserva-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.reserva-card h3 {
+  color: #1d5661;
+  margin-bottom: 4px;
+}
+
+.reserva-total {
+  font-weight: bold;
+  color: #ff9800;
+}
+
+.reservas-vazio {
+  text-align: center;
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.btn-link {
+  display: inline-block;
+  background: #ff9800;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-link:hover {
+  background: #e68900;
+}

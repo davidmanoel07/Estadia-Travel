@@ -19,6 +19,7 @@ function Header() {
 
           {usuarioLogado ? (
             <>
+             <Link to="/minhas-reservas" className="nav-link">Minhas Reservas</Link>
               <span className="nav-link">Olá, {usuarioLogado.nome}</span>
               <button className="nav-link btn-sair" onClick={handleSair}>
                 Sair
